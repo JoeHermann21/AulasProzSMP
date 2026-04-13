@@ -1,0 +1,49 @@
+<style>
+    body {
+        background-color: #317109;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    a {
+        color: inherit;
+    }
+</style>
+
+<!--https://horadecodar.com.br/como-prevenir-sql-injection-com-php/-->
+
+<?php
+ini_set("display_errors", 1);
+if (isset($_POST['email']) && isset($_POST['senha'])) {
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+        $conexao =
+            mysqli_connect
+            ('127.0.0.1', 'root', '');
+        mysqli_select_db($conexao, 'login');
+
+        $email = $_POST["email"];
+        $senha = $_POST["senha"];
+
+        $stmt = $conexao->prepare("SELECT email, senha, perfil FROM usuario WHERE email = ? AND senha = ?");
+        $stmt->bind_param("ss", $email, $senha);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($row = $result->fetch_assoc()) {
+            echo "<br> Logado com sucesso";
+            echo "<br> Perfil de acesso: " . htmlspecialchars($row['perfil']);
+        } else {
+            echo "<br> Não logou, tente novamente!";
+            echo "<a href='Login.html'> <br><br> Voltar à página inicial </a>";
+        }
+
+        $stmt->close();
+        $conexao->close();
+    }
+}
+?>
