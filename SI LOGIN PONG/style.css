@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  font-weight: bold;
+  background-color: #4a8824;
+}
+
+.bloco {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.botao {
+  padding: 5pt 58pt;
+  text-align: center;
+  font-weight: bold;
+  background-color: #829479;
+}
+
+.caixaTexto {
+  padding: 5pt;
+  width: 200px;
+}
+
+h3 {
+  color: blanchedalmond;
+}
+
+.titulo {
+  font-style: bold;
+  color: blanchedalmond;
+  font-size: 20pt;
+}
+
+a {
+  font-size: 16.5pt;
+  font-style: bold;
+  color: inherit;
+}
+
+.jogo {
+  height: 95vh;
+  width: 95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
