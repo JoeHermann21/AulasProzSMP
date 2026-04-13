@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title> Estoque do Bão </title>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<form action="produto.php" method="POST"> <br>
+	<h1> Sistema de cadastro de produtos </h1>
+
+	<h4> Nome: <input type="text" name="nome" 
+	placeholder="Ex.: Fita Crepe 3M"> <br> </h4>
+
+	<h4> Preço: R$ <input type="number" name="preco" min="0.00" 
+	step=".01"	placeholder="Ex.: 14.99"> <br> </h4>
+
+	<h4> Quantidade: <input type="number" name="quantidade" 
+	min="0" placeholder="Ex.: 5"> <br> </h4>
+
+	<input type="submit" value="Cadastrar Produto">
+	</form>
+</body>
+</html>
