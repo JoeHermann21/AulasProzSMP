@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  font-weight: bold;
+  background-color: rgb(18, 180, 159);
+}
+
+.bloco {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.botao {
+  padding: 5pt 58pt;
+  text-align: center;
+  font-weight: bold;
+  background-color: #829479;
+}
+
+.caixaTexto {
+  padding: 5pt;
+  width: 200px;
+}
+
+h3 {
+  color: blanchedalmond;
+  font-size: 16.5pt;
+}
+
+.titulo {
+  font-style: bold;
+  color: blanchedalmond;
+  font-size: 20pt;
+}
+
+a {
+  font-size: 16.5pt;
+  font-style: bold;
+  color: inherit;
+}
+.player {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper {
+  border: 1px solid transparent;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background: transparent;
+  opacity: .9;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.track-art {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  border: 2px solid #FFFAFA;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  -moz-box-shadow: 0px 6px 5px black;
+  -webkit-box-shadow: 0px 6px 5px black;
+  box-shadow: 0px 6px 5px black;
+  -moz-border-radius: 190px;
+  -webkit-border-radius: 190px;
+  border-radius: 190px;
+}
+
+img{
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.track-name {
+  font-size: 2.5rem;
+  color: #f1f1f1;
+}
+
+.track-artist {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  color: #f1f1f1;
+}
+
+.track-album{
+  margin-top: 5px;
+  font-size: 1.25em;
+  color: #f1f1f1;
+}
+
+.coracao{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+button{
+	border-radius: 50%;	
+	margin-bottom: 0.5pt;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+header{
+	height: 60pt;
+}
+
+h1{  
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
